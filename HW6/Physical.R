@@ -1,0 +1,1 @@
+physical <- read.table('PhysicalData.txt', header=T);

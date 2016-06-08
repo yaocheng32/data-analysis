@@ -1,0 +1,17 @@
+yes
+install.packages("Rcmdr", dependencies=TRUE)
+library(Rcmdr)
+getwd
+getwd()
+source("2.29.R")
+source("1.27.R")
+women
+plot(women$age, women$mass, xlab="Age", ylab="Muscle Mass")
+abline(reg)
+predict(reg, list(age=60), level = 0.95, interval="confidence")
+reg$residuals[8]
+summary(reg)$sigma^2
+summary(reg)
+confint(reg, 'age', level=0.95)
+confint(reg, 'age', level=0.90)
+install.packages("swirl")
